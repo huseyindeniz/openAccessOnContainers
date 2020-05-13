@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  oar.apps.webspa:
+    image: oar.apps.webspa
+    build: 
+      context: ./oar.apps.webspa
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 80
+      - 9229:80
+    tty: true
