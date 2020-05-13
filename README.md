@@ -29,13 +29,13 @@ Microservices Training Application.
 ### Workflow for getting updates from submodules
 1. Switch to dev branch.
 2. <code>git pull origin master</code> to get latest direct changes on master branch
-3. <code>git submodule foreach git pull origin master</code>
-4. <code>git submodule foreach git checkout master</code>
-5. <code>git add .</code>
-6. <code>git commit -m "get latest updates from submodules"</code>
-7. <code>git push origin dev</code>
-8. Create pull request to qa branch
-9. Review and merge pull request on qa branch.
+3. Switch to qa branch.
+4. <code>git pull origin dev</code> to get latest direct changes on dev branch
+5. <code>git submodule foreach git pull origin master</code>
+6. <code>git submodule foreach git checkout master</code>
+7. <code>git add .</code>
+8. <code>git commit -m "get latest updates from submodules"</code>
+9. <code>git push origin qa</code>
 10. Run integration tests
 11. Create pull request to dev if integration tests not failed.
 12. Merge pull request on dev branch.
