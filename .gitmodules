@@ -1,0 +1,4 @@
+[submodule "oar.apps.webspa"]
+	path = oar.apps.webspa
+	url = https://github.com/huseyindeniz/oar.apps.webspa.git
+	branch = master
