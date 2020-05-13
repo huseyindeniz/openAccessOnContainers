@@ -28,9 +28,9 @@ Microservices Training Application.
 
 ### Workflow for getting updates from submodules
 1. Switch to dev branch.
-2. <code>git pull origin master</code> to get latest direct changes on master branch
+2. <code>git pull origin master, git merge master</code> to get latest direct changes on master branch
 3. Switch to qa branch.
-4. <code>git pull origin dev</code> to get latest direct changes on dev branch
+4. <code>git pull origin dev, git merge dev</code> to get latest direct changes on dev branch
 5. <code>git submodule foreach git pull origin master</code>
 6. <code>git submodule foreach git checkout master</code>
 7. <code>git add .</code>
@@ -44,7 +44,7 @@ Microservices Training Application.
 
 ## Workflow for main module (this module) 
 1. Switch to dev branch.
-2. <code>git pull origin master</code> to get latest direct changes on master branch
+2. <code>git pull origin master, git merge master</code> to get latest direct changes on master branch
 3. <code>git branch -a <feature_name></code> to create new feature branch.
 4. Switch to feature branch.
 5. Work on this branch until feature finished.
@@ -56,3 +56,9 @@ Microservices Training Application.
 7. Merge pull request on dev branch.
 8. Create pull reqest to master branch if the milestone features completed.
 9. Merge pull request on master branch.
+
+## Reqirements
+- Each microservice and app should have its own repository.
+- Each microservice and app should be independent to others.
+- Integration should be made by environment configuration files.
+- All rest api (client or server) submodules should get api definition from main module.
