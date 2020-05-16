@@ -1,5 +1,19 @@
 # openAccessOnContainers
-Microservices Training Application.
+
+I've started this application as part of my Microservices training. It's planned as covering all topics in microservices, including frontend, backend, virtualization, orchestration.
+
+The main idea of application is coming from Open Access Repositories for Academic publications. It will be a kind of hub for accessing different open access repositories. These repositories have different softwares, different and mostly not user friendly interfaces. With this app, researchers will find what they are looking for. Also, they will be able to organize their research in this app. 
+
+The project is at an early stage. So it is not yet suitable for collaboration. I will consider this topic after a while.
+
+## Technical Requirements
+- Each microservice and app should have its own repository.
+- Each microservice and app should be able to be developed alone.
+- Each microservice and app should be able to be live tested alone.
+- Integration should be made by environment configuration files.
+- All rest api (client or server) submodules should get api definition from main(this) module. (probably with swagger)
+- Developers are responsible for apps, not backend, frontend, db etc.
+- After first release, app should be able to be deployed on Azure.
 
 ## Microservices (will be updated)
 - Catalog (with .netcore)
@@ -111,11 +125,3 @@ Microservices Training Application.
 8. <code>git add .</code>
 9. <code>git commit -m "latest updates sent to submodules"</code>
 10. <code>git push origin master</code>
-
-## Requirements
-- Each microservice and app should have its own repository.
-- Each microservice and app should be independent to others.
-- Integration should be made by environment configuration files.
-- All rest api (client or server) submodules should get api definition from main module. (probably with swagger)
-- All components should have unit test and general code covarege for tests should be above 80%.
-
