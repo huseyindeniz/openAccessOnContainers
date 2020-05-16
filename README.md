@@ -61,7 +61,7 @@ Microservices Training Application.
     - Builds deployment packages.
     - Deploys packages.
 
-## Notes for myself
+## Workflows 
 
 ### Workflow for adding submodules
 1. git submodule add -b <branch_name> <git_address_of_submodule>
