@@ -1,0 +1,42 @@
+openapi: '3.0.0'
+info:
+  description: 'This is a sample Catalogstore server. For this sample, you can use the api key `special-key` to test the authorization filters.'
+  version: '1.0.0'
+  title: 'OpenAccessOnContainers Catalogstore'
+  contact:
+    email: 'huseyindenizkivrak@gmail.com'
+  license:
+    name: 'Apache 2.0'
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: 'catalog'
+    description: 'Everything about Catalogs'
+  - name: 'user'
+    description: 'Operations about User'
+servers:
+  - url: http://localhost:13002/v1.0
+paths:
+  /catalogs:
+    get:
+      tags:
+        - 'catalog'
+      summary: 'Get all catalogs'
+      description: 'TODO: pagination should be handled'
+      operationId: 'oarApi.getAllCatalogs'
+      responses:
+        '200':
+          description: 'successful operation'
+          content:
+            application/json:
+              schema:
+                type: 'array'
+                items:
+                  $ref: '#/components/schemas/Catalog'
+        '400':
+          description: 'Invalid limit or after_id'
+components:
+  schemas:
+    $ref: './schemas/_index.yaml'
+externalDocs:
+  description: 'Find out more about Swagger'
+  url: 'http://swagger.io'
