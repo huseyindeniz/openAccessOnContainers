@@ -1,0 +1,44 @@
+type: 'object'
+properties:
+  id:
+    type: 'string'
+  title:
+    type: 'string'
+  description:
+    type: 'string'
+  subject:
+    type: 'array'
+    items:
+      type: 'string'
+  creator:
+    $ref: './Contributer.yaml'
+  contributer:
+    type: 'array'
+    items:
+      $ref: './Contributer.yaml'
+  type:
+    type: 'array'
+    items:
+      $ref: './Type.yaml'
+  language:
+    $ref: './Language.yaml'
+  source:
+    type: 'string'
+  right:
+    type: 'string'
+  relation:
+    type: 'array'
+    items:
+      type: 'string'
+  publisher:
+    $ref: './Publisher.yaml'
+  identifier:
+    type: 'array'
+    items:
+      type: 'string'
+  format:
+    type: 'string'
+  date:
+    type: 'string'
+  coverage:
+    type: 'string'

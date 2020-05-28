@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  oar.swagger.editor:
+    image: oar.swagger.editor
+    build:
+      context: ./
+      dockerfile: Dockerfile.swagger-editor
+    environment:
+      NODE_ENV: development
+    ports:
+      - 8080
+      - 13001:8080
+    tty: true
+  oar.mockapi:
+    image: oar.mockapi
+    build:
+      context: ./
+      dockerfile: Dockerfile.connexion
+    environment:
+      NODE_ENV: development
+    ports:
+      - 8080
+      - 13002:8080
+    tty: true
