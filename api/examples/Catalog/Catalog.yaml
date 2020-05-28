@@ -1,0 +1,36 @@
+[
+    {
+        id: '102572',
+        title: 'Adapting to change: Time for climate resilience and  a new adaptation strategy. EPC Issue Paper 5 March 2020',
+        creator: {
+            id: '1',
+            name: 'Piqueres , Sofía López'
+        },
+        contributer: [
+            {
+                id: '2',
+                name: 'Giuli , Marco'
+            },
+            {
+                id: '3',
+                name: 'Hedberg, Annika'
+            },            
+        ],
+        subject: [
+            'energy policy (Including international arena)',
+            'environmental policy (including international arena)'
+        ],
+        description: 'The dramatic effects of climate change are being felt across the European continent and the world...',
+        date: '2020',
+        type: [
+            {id: '1', name: 'Other'}, {id: '2', name: 'NonPeerReviewed'}
+        ],
+        format: 'application/pdf',
+        identifier: ['http://aei.pitt.edu/102572/1/Climate_resilience_05_03.pdf'],
+        relation: [ 'http://aei.pitt.edu/102572/' ]
+    },
+    {
+        id: "435543",
+        title: "deneme 456"
+    }
+]
