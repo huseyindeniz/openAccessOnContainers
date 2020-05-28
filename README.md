@@ -102,8 +102,8 @@ The project is at an early stage. So it is not yet suitable for collaboration. I
 2. <code>git pull origin master, git merge master</code> to get latest direct changes on master branch -optional
 3. Switch to qa branch.
 4. <code>git pull origin dev, git merge dev</code> to get latest direct changes on dev branch. -optional
-5. <code>git submodule foreach git pull origin master</code>
-6. <code>git submodule foreach git checkout master</code>
+5. <code>git submodule foreach git checkout master</code>
+6. <code>git submodule foreach git pull origin master</code>
 7. <code>git add .</code>
 8. <code>git commit -m "get latest updates from submodules"</code>
 9. <code>git push origin qa</code>
@@ -116,8 +116,8 @@ The project is at an early stage. So it is not yet suitable for collaboration. I
 ### Workflow for sending updates to submodules
 1. Merge changes which effects submodules to master branch with main module workflow.
 2. Switch to master branch.
-3. <code>git submodule foreach git pull origin dev</code>
-4. <code>git submodule foreach git checkout dev</code>
+3. <code>git submodule foreach git checkout dev</code>
+4. <code>git submodule foreach git pull origin dev</code>
 5. <code>git submodule foreach git add .</code>
 6. <code>git submodule foreach git commit -m "get changes from main module"</code>
 7. <code>git submodule foreach git push origin dev</code>
