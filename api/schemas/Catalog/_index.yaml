@@ -1,0 +1,10 @@
+Contributer:
+  $ref: './Contributer.yaml'
+Publisher:
+  $ref: './Publisher.yaml'
+Language:
+  $ref: './Language.yaml'
+Type:
+  $ref: './Type.yaml'
+Catalog:
+  $ref: './Catalog.yaml'
