@@ -5,7 +5,7 @@ services:
     image: oar.apps.webspa
     build:
       context: ./oar.apps.webspa
-      dockerfile: ./oar.apps.webspa/Dockerfile
+      dockerfile: ./Dockerfile
     environment:
       NODE_ENV: production
     ports:
