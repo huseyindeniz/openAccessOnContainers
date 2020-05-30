@@ -18,3 +18,7 @@
 	path = oar.services.catalog
 	url = https://github.com/huseyindeniz/oar.services.catalog.git
 	branch = master
+[submodule "oar.eventbus"]
+	path = oar.eventbus
+	url = https://github.com/huseyindeniz/oar.eventbus
+	branch = master
