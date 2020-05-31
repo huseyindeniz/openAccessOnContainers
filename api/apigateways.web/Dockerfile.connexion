@@ -8,11 +8,11 @@ RUN pip install pyyaml
 
 RUN npm install -g swagger-cli
 
-COPY ./api .
+COPY . .
 
-RUN swagger-cli bundle oarApi.yaml --outfile _build/oarApi.yaml --type yaml
+RUN swagger-cli bundle app.yaml --outfile _build/app.yaml --type yaml
 
 EXPOSE 8080
 
-CMD python ./oarApi.py
-# CMD connexion run ./_build/oarApi.yaml --mock=all -v
+CMD python ./app.py
+# CMD connexion run ./_build/app.yaml --mock=all -v

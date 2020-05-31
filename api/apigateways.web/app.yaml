@@ -1,8 +1,8 @@
 openapi: '3.0.0'
 info:
-  description: 'This is a sample Catalogstore server. For this sample, you can use the api key `special-key` to test the authorization filters.'
+  description: 'This is a sample Web Store server. For this sample, you can use the api key `special-key` to test the authorization filters.'
   version: '1.0.0'
-  title: 'OpenAccessOnContainers Catalogstore'
+  title: 'OpenAccessOnContainers Web Store'
   contact:
     email: 'huseyindenizkivrak@gmail.com'
   license:
@@ -14,7 +14,7 @@ tags:
   - name: 'user'
     description: 'Operations about User'
 servers:
-  - url: http://localhost:13002/v1.0
+  - url: /v1.0
 paths:
   /catalogs:
     get:
@@ -22,7 +22,7 @@ paths:
         - 'catalog'
       summary: 'Get all catalogs'
       description: 'TODO: pagination should be handled'
-      operationId: 'oarApi.getAllCatalogs'
+      operationId: 'app.getAllCatalogs'
       responses:
         '200':
           description: 'successful operation'
