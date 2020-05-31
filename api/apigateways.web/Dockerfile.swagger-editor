@@ -1,0 +1,27 @@
+# State 1
+FROM nikolaik/python-nodejs:python3.8-nodejs14-alpine as build
+
+WORKDIR /usr/home
+
+RUN pip install connexion[swagger-ui]
+
+RUN pip install pyyaml
+
+RUN npm install -g swagger-cli
+
+COPY . .
+
+RUN swagger-cli bundle app.yaml --outfile _build/app.yaml --type yaml
+
+# Stage 2
+FROM swaggerapi/swagger-editor:v3.9.0
+
+COPY --from=build /usr/home/_build/app.yaml /usr/share/nginx/html/app.yaml
+
+ENV CONFIG_URL=./app.yaml
+
+WORKDIR /home
+
+EXPOSE 8080
+
+#CMD [ "URL=./app.yaml" ]
